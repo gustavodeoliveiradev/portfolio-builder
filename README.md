@@ -1,6 +1,16 @@
 # ✨ Portfolio Builder
 
-Crie seu portfólio profissional em minutos!
+> Crie seu portfólio profissional em minutos, sem complicação.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-222222?style=flat&logo=github)](https://gustavodeoliveiradev.github.io/portfolio-builder/)
+[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)](#)
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</p>
 
 O **Portfolio Builder** é uma aplicação web que permite criar um portfólio profissional de forma rápida e intuitiva. Preencha o formulário com seus dados, adicione seus projetos, escolha um tema e gere seu portfólio personalizado.
 

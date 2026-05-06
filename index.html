@@ -1,233 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Crie seu portfólio profissional em minutos"/>
-  <title>✨ Portfolio Builder - Crie Seu Portfólio</title>
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <link rel="stylesheet" href="assets/css/main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Crie seu portfólio profissional em minutos" />
+    <title>✨ Portfolio Builder - Crie Seu Portfólio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body>
-  <!-- Background Animado -->
-  <div class="bg-animation">
-    <div class="gradient-orb orb-1"></div>
-    <div class="gradient-orb orb-2"></div>
-    <div class="gradient-orb orb-3"></div>
-  </div>
+    <!-- Background Animado -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
 
-  <div class="container-wrapper">
-    <!-- Header -->
-    <header class="main-header">
-      <div class="header-content">
-        <div class="logo">
-          <i class="fas fa-magic"></i>
-          <h1>Portfolio Builder</h1>
-        </div>
-        <p class="subtitle">Crie seu portfólio profissional em minutos</p>
-      </div>
-    </header>
-
-    <main class="main-container">
-      <!-- Formulário -->
-      <section class="form-card">
-        <div class="card-header">
-          <i class="fas fa-user-edit"></i>
-          <h2>Seus Dados</h2>
-        </div>
-        
-        <form id="portfolio-form">
-          <!-- Informações Pessoais -->
-          <div class="form-group">
-            <label for="name">
-              <i class="fas fa-user"></i>
-              Nome Completo *
-            </label>
-            <input 
-              type="text" 
-              id="name" 
-              name="name" 
-              placeholder="Ex: Maria Silva" 
-              required 
-              autocomplete="name"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="bio">
-              <i class="fas fa-align-left"></i>
-              Sobre Você
-            </label>
-            <textarea 
-              id="bio" 
-              name="bio" 
-              rows="4" 
-              placeholder="Conte um pouco sobre sua trajetória profissional..."
-            ></textarea>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label for="email">
-                <i class="fas fa-envelope"></i>
-                Email
-              </label>
-              <input 
-                type="email" 
-                id="email" 
-                name="email" 
-                placeholder="seu@email.com"
-                autocomplete="email"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="location">
-                <i class="fas fa-map-marker-alt"></i>
-                Localização
-              </label>
-              <input 
-                type="text" 
-                id="location" 
-                name="location" 
-                placeholder="Ex: São Paulo, SP"
-              />
-            </div>
-          </div>
-
-          <!-- Habilidades -->
-          <div class="form-group">
-            <label for="skills">
-              <i class="fas fa-code"></i>
-              Habilidades
-            </label>
-            <input 
-              type="text" 
-              id="skills" 
-              name="skills" 
-              placeholder="HTML, CSS, JavaScript, React..."
-            />
-            <small class="help-text">Separe por vírgulas</small>
-          </div>
-
-          <!-- Projetos -->
-          <div class="form-group">
-            <label>
-              <i class="fas fa-folder-open"></i>
-              Projetos
-            </label>
-            <div id="projects-container" class="projects-list">
-              <div class="project-card">
-                <div class="project-header">
-                  <span class="project-number">Projeto 1</span>
-                  <button type="button" class="btn-remove-project" title="Remover projeto">
-                    <i class="fas fa-trash"></i>
-                  </button>
+    <div class="container-wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-magic"></i>
+                    <h1>Portfolio Builder</h1>
                 </div>
-                <input 
-                  type="text" 
-                  name="project-title[]" 
-                  placeholder="Título do projeto"
-                  class="project-input"
-                />
-                <input 
-                  type="url" 
-                  name="project-link[]" 
-                  placeholder="https://seuprojeto.com"
-                  class="project-input"
-                />
-                <textarea 
-                  name="project-desc[]" 
-                  placeholder="Breve descrição do projeto..."
-                  rows="2"
-                  class="project-input"
-                ></textarea>
-              </div>
+                <p class="subtitle">Crie seu portfólio profissional em minutos</p>
             </div>
-            <button type="button" id="add-project" class="btn-add-project">
-              <i class="fas fa-plus"></i>
-              Adicionar Projeto
-            </button>
-          </div>
+        </header>
 
-          <!-- Tema -->
-          <div class="form-group">
-            <label>
-              <i class="fas fa-palette"></i>
-              Escolha o Tema
-            </label>
-            <div class="theme-selector">
-              <label class="theme-option" data-theme-value="minimal">
-                <input type="radio" name="theme" value="minimal" checked />
-                <div class="theme-preview theme-minimal">
-                  <div class="theme-preview-header"></div>
-                  <div class="theme-preview-content"></div>
+        <main class="main-container">
+            <!-- Formulário -->
+            <section class="form-card">
+                <div class="card-header">
+                    <i class="fas fa-user-edit"></i>
+                    <h2>Seus Dados</h2>
                 </div>
-                <span class="theme-name">Minimalista</span>
-              </label>
 
-              <label class="theme-option" data-theme-value="bold">
-                <input type="radio" name="theme" value="bold" />
-                <div class="theme-preview theme-bold">
-                  <div class="theme-preview-header"></div>
-                  <div class="theme-preview-content"></div>
+                <form id="portfolio-form">
+                    <!-- Informações Pessoais -->
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="fas fa-user"></i>
+                            Nome Completo *
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Ex: Maria Silva" required
+                            autocomplete="name" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">
+                            <i class="fas fa-align-left"></i>
+                            Sobre Você
+                        </label>
+                        <textarea id="bio" name="bio" rows="4"
+                            placeholder="Conte um pouco sobre sua trajetória profissional..."></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i>
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com"
+                                autocomplete="email" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Localização
+                            </label>
+                            <input type="text" id="location" name="location" placeholder="Ex: São Paulo, SP" />
+                        </div>
+                    </div>
+
+                    <!-- Habilidades -->
+                    <div class="form-group">
+                        <label for="skills">
+                            <i class="fas fa-code"></i>
+                            Habilidades
+                        </label>
+                        <input type="text" id="skills" name="skills" placeholder="HTML, CSS, JavaScript, React..." />
+                        <small class="help-text">Separe por vírgulas</small>
+                    </div>
+
+                    <!-- Projetos -->
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-folder-open"></i>
+                            Projetos
+                        </label>
+                        <div id="projects-container" class="projects-list">
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <span class="project-number">Projeto 1</span>
+                                    <button type="button" class="btn-remove-project" title="Remover projeto">
+                                        <i class="fas fa-trash"></i>
+                                    </button>
+                                </div>
+                                <input type="text" name="project-title[]" placeholder="Título do projeto"
+                                    class="project-input" />
+                                <input type="url" name="project-link[]" placeholder="https://seuprojeto.com"
+                                    class="project-input" />
+                                <textarea name="project-desc[]" placeholder="Breve descrição do projeto..." rows="2"
+                                    class="project-input"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" id="add-project" class="btn-add-project">
+                            <i class="fas fa-plus"></i>
+                            Adicionar Projeto
+                        </button>
+                    </div>
+
+                    <!-- Tema -->
+                    <div class="form-group">
+                        <label>
+                            <i class="fas fa-palette"></i>
+                            Escolha o Tema
+                        </label>
+                        <div class="theme-selector">
+                            <label class="theme-option" data-theme-value="minimal">
+                                <input type="radio" name="theme" value="minimal" checked />
+                                <div class="theme-preview theme-minimal">
+                                    <div class="theme-preview-header"></div>
+                                    <div class="theme-preview-content"></div>
+                                </div>
+                                <span class="theme-name">Minimalista</span>
+                            </label>
+
+                            <label class="theme-option" data-theme-value="bold">
+                                <input type="radio" name="theme" value="bold" />
+                                <div class="theme-preview theme-bold">
+                                    <div class="theme-preview-header"></div>
+                                    <div class="theme-preview-content"></div>
+                                </div>
+                                <span class="theme-name">Moderno</span>
+                            </label>
+
+                            <label class="theme-option" data-theme-value="elegant">
+                                <input type="radio" name="theme" value="elegant" />
+                                <div class="theme-preview theme-elegant">
+                                    <div class="theme-preview-header"></div>
+                                    <div class="theme-preview-content"></div>
+                                </div>
+                                <span class="theme-name">Elegante</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-generate">
+                        <i class="fas fa-magic"></i>
+                        Gerar Preview
+                    </button>
+                </form>
+            </section>
+
+            <!-- Preview -->
+            <section class="preview-card">
+                <div class="card-header">
+                    <i class="fas fa-eye"></i>
+                    <h2>Preview</h2>
                 </div>
-                <span class="theme-name">Moderno</span>
-              </label>
-
-              <label class="theme-option" data-theme-value="elegant">
-                <input type="radio" name="theme" value="elegant" />
-                <div class="theme-preview theme-elegant">
-                  <div class="theme-preview-header"></div>
-                  <div class="theme-preview-content"></div>
+                <div id="preview" class="preview-container">
+                    <div class="preview-empty">
+                        <i class="fas fa-desktop"></i>
+                        <p>Preencha o formulário e clique em "Gerar Preview"</p>
+                    </div>
                 </div>
-                <span class="theme-name">Elegante</span>
-              </label>
-            </div>
-          </div>
+            </section>
+        </main>
 
-          <button type="submit" class="btn-primary btn-generate">
-            <i class="fas fa-magic"></i>
-            Gerar Preview
-          </button>
-        </form>
-      </section>
+        <!-- Footer -->
+        <footer class="main-footer">
+            <p>Feito com <i class="fas fa-heart"></i> |
+                <a href="https://github.com/gustavodeoliveiradev/portfolio-builder" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </p>
+        </footer>
+    </div>
 
-      <!-- Preview -->
-      <section class="preview-card">
-        <div class="card-header">
-          <i class="fas fa-eye"></i>
-          <h2>Preview</h2>
-        </div>
-        <div id="preview" class="preview-container">
-          <div class="preview-empty">
-            <i class="fas fa-desktop"></i>
-            <p>Preencha o formulário e clique em "Gerar Preview"</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-      <p>Feito com <i class="fas fa-heart"></i> | 
-        <a href="https://github.com/gustavodeoliveiradev/portfolio-builder" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </p>
-    </footer>
-  </div>
-
-  <script src="assets/js/form-handler.js"></script>
-  <script src="assets/js/theme-switcher.js"></script>
-  <script src="assets/js/projects-manager.js"></script>
+    <script src="assets/js/form-handler.js"></script>
+    <script src="assets/js/theme-switcher.js"></script>
+    <script src="assets/js/projects-manager.js"></script>
 </body>
+
 </html>
