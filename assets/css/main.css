@@ -153,6 +153,7 @@
 
 /* ===== 🔄 Transições Suaves entre Temas ===== */
 *, *::before, *::after {
+  box-sizing: border-box; 
   transition-property: background-color, border-color, color, box-shadow;
   transition-duration: var(--transition-base);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
