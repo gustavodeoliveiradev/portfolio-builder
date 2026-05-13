@@ -1,0 +1,53 @@
+/* assets/css/theme-bold.css */
+
+[data-theme="bold"] {
+  /* Fundo Escuro Profundo */
+  --color-bg-primary: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-tertiary: #334155;
+  
+  /* Texto Brilhante */
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+  
+  /* Cores Vibrantes (Cyan/Roxo) */
+  --color-border: #475569;
+  --color-border-focus: #22d3ee;
+  
+  --color-primary: #22d3ee; /* Azul Ciano */
+  --color-primary-hover: #06b6d4;
+  --color-primary-light: rgba(34, 211, 238, 0.1);
+  
+  --color-accent: #f472b6; /* Rosa Neon */
+  
+  /* Gradientes Impactantes */
+  --gradient-primary: linear-gradient(135deg, #22d3ee 0%, #818cf8 100%);
+  --gradient-bg: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  
+  /* Sombras mais profundas para Dark Mode */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 20px rgba(34, 211, 238, 0.2);
+}
+
+/* Ajustes Específicos para o tema Bold */
+[data-theme="bold"] .form-card,
+[data-theme="bold"] .preview-card {
+  border: 1px solid var(--color-border);
+  background: rgba(30, 41, 59, 0.7); /* Efeito vidro escuro */
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="bold"] input,
+[data-theme="bold"] textarea {
+  background-color: #020617;
+  border-color: #334155;
+  color: white;
+}
+
+[data-theme="bold"] input:focus,
+[data-theme="bold"] textarea:focus {
+  background-color: #0f172a;
+  border-color: var(--color-primary);
+}
